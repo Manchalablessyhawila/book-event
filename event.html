@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book event</title>
+    <link rel="stylesheet" href="event.css">
+</head>
+<body><div class="container"><h1><center>Book Event</center></h1><div>
+   <div> 
+    <fieldset>
+      <form>
+  <div class="elem-group">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="visitor_name" placeholder="Blessy" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="email">Your E-mail</label>
+    <input type="email" id="email" name="visitor_email" placeholder="abc@email.com" required>
+  </div>
+  <div class="elem-group">
+    <label for="phone">Your Phone</label>
+    <input type="tel" id="phone" name="visitor_phone" placeholder="Enter ur phone number" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+  </div>
+  <div class="elem-group">
+    <label for="Event">Select Event</label>
+    <select id="Event" name="Event" placeholder="Choose a event from the list" required>
+        <option value="Music Festival">Music Festival</option>
+        <option value="Business Conference">Business Conference</option>
+        <option value="Hip Hop Beginners class">Hip Hop Beginners class</option>
+        <option value="Art&craftshop">Art&craftshop</option>
+        <option value="Book read championship">Book read Championship</option>
+        <option value="State chess championship">State chess Championship</option>
+    </select>
+    </div>
+    <div class="elem-group inlined">
+    <label for="quantity">quantity</label>
+    <input type="number" id="quantity" name="quantity" placeholder="2" min="1" required>
+    </div>
+    
+   <div class="elem-group inlined">
+    <label for="check-date">Check-Date</label>
+    <input type="date" id="check-date" name="checkin" required>
+  </div>
+  <button type="submit">Book The Rooms</button>
+</form>
+   
+
+  
